@@ -205,29 +205,42 @@ const DeductionDecoder = () => {
           <img 
             src="https://images.squarespace-cdn.com/content/v1/682bd5602303c048ae24fed5/bc3a95ee-1ff9-4be9-8fbf-af5263adcb66/Frame+30.png?format=1500w" 
             alt="Revya Logo" 
-            className="h-8 w-auto hover:opacity-80 transition-opacity cursor-pointer"
+            className="h-12 w-auto hover:opacity-80 transition-opacity cursor-pointer"
           />
         </a>
       </div>
       
       {/* Navigation */}
       <nav className="hidden md:flex items-center space-x-8">
-        <a href="#" className="text-gray-600 hover:text-gray-900 font-medium border-b-2 border-gray-900">
+        <a 
+          href="https://www.revya.ai" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-gray-700 hover:text-gray-900 font-medium border-b-2 border-gray-900 pb-1"
+        >
           Home
         </a>
-        <a href="#" className="text-gray-600 hover:text-gray-900 font-medium">
+        <a 
+          href="https://www.revya.ai/about" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="text-gray-700 hover:text-gray-900 font-medium"
+        >
           About
         </a>
       </nav>
       
       {/* CTA Button */}
-      <button 
-        onClick={() => setShowLeadModal(true)}
-        className="bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-6 rounded-full transition-colors"
+      
+      <a
+        href="https://calendly.com/komal-gorevya/30min"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-8 rounded-full transition-colors text-lg"
         style={{ backgroundColor: '#6C12ED' }}
       >
         Book a Demo
-      </button>
+      </a>
     </div>
   </div>
 </header>
