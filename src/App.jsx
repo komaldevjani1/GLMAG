@@ -195,21 +195,39 @@ const DeductionDecoder = () => {
 
   return (
     <div className="min-h-screen bg-gray-50" style={{ backgroundColor: '#FAFAFC' }}>
-      {/* Header */}
-      <header className="bg-white shadow-sm border-b">
-        <div className="max-w-6xl mx-auto px-4 py-6">
-          <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-2xl font-bold text-gray-900">Revya</h1>
-              <p className="text-sm text-gray-600 mt-1">Deduction Decoder</p>
-            </div>
-            <div className="text-right">
-              <p className="text-sm font-medium text-gray-900">Instant Code Analysis</p>
-              <p className="text-xs text-gray-500">For CPG Finance Teams</p>
-            </div>
-          </div>
+{/* Header */}
+<header className="bg-white shadow-sm border-b">
+  <div className="max-w-6xl mx-auto px-4 py-4">
+    <div className="flex items-center justify-between">
+      {/* Logo */}
+      <div className="flex items-center">
+        <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center mr-3">
+          <span className="text-white font-bold text-lg">R</span>
         </div>
-      </header>
+        <span className="text-xl font-bold text-gray-900">Revya</span>
+      </div>
+      
+      {/* Navigation */}
+      <nav className="hidden md:flex items-center space-x-8">
+        <a href="#" className="text-gray-600 hover:text-gray-900 font-medium border-b-2 border-gray-900">
+          Home
+        </a>
+        <a href="#" className="text-gray-600 hover:text-gray-900 font-medium">
+          About
+        </a>
+      </nav>
+      
+      {/* CTA Button */}
+      <button 
+        onClick={() => setShowLeadModal(true)}
+        className="bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 px-6 rounded-full transition-colors"
+        style={{ backgroundColor: '#6C12ED' }}
+      >
+        Book a Demo
+      </button>
+    </div>
+  </div>
+</header>
 
       {/* Main Content */}
       <main className="max-w-6xl mx-auto px-4 py-12">
@@ -801,16 +819,25 @@ const DeductionDecoder = () => {
         </div>
       )}
 
-      {/* Footer */}
-      <footer className="bg-white border-t mt-20">
-        <div className="max-w-6xl mx-auto px-4 py-8">
-          <div className="text-center">
-            <p className="text-gray-600 text-sm">
-              © 2025 Revya. Helping CPG brands recover revenue through better deduction management.
-            </p>
-          </div>
+   {/* Footer */}
+<footer className="bg-white border-t mt-20">
+  <div className="max-w-6xl mx-auto px-4 py-6">
+    <div className="flex items-center justify-between">
+      {/* Logo */}
+      <div className="flex items-center">
+        <div className="w-6 h-6 bg-purple-600 rounded-md flex items-center justify-center mr-2">
+          <span className="text-white font-bold text-sm">R</span>
         </div>
-      </footer>
+        <span className="text-lg font-bold text-gray-900">Revya</span>
+      </div>
+      
+      {/* Copyright */}
+      <p className="text-gray-600 text-sm">
+        © 2025 Revya. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
     </div>
   );
 };
