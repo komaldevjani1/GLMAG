@@ -201,10 +201,13 @@ const DeductionDecoder = () => {
     <div className="flex items-center justify-between">
       {/* Logo */}
       <div className="flex items-center">
-        <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center mr-3">
-          <span className="text-white font-bold text-lg">R</span>
-        </div>
-        <span className="text-xl font-bold text-gray-900">Revya</span>
+        <a href="https://www.revya.ai" target="_blank" rel="noopener noreferrer">
+          <img 
+            src="https://images.squarespace-cdn.com/content/v1/682bd5602303c048ae24fed5/bc3a95ee-1ff9-4be9-8fbf-af5263adcb66/Frame+30.png?format=1500w" 
+            alt="Revya Logo" 
+            className="h-8 w-auto hover:opacity-80 transition-opacity cursor-pointer"
+          />
+        </a>
       </div>
       
       {/* Navigation */}
@@ -819,16 +822,20 @@ const DeductionDecoder = () => {
         </div>
       )}
 
-   {/* Footer */}
+
+{/* Footer */}
 <footer className="bg-white border-t mt-20">
   <div className="max-w-6xl mx-auto px-4 py-6">
     <div className="flex items-center justify-between">
       {/* Logo */}
       <div className="flex items-center">
-        <div className="w-6 h-6 bg-purple-600 rounded-md flex items-center justify-center mr-2">
-          <span className="text-white font-bold text-sm">R</span>
-        </div>
-        <span className="text-lg font-bold text-gray-900">Revya</span>
+        <a href="https://www.revya.ai" target="_blank" rel="noopener noreferrer">
+          <img 
+            src="https://images.squarespace-cdn.com/content/v1/682bd5602303c048ae24fed5/bc3a95ee-1ff9-4be9-8fbf-af5263adcb66/Frame+30.png?format=1500w" 
+            alt="Revya Logo" 
+            className="h-6 w-auto hover:opacity-80 transition-opacity cursor-pointer"
+          />
+        </a>
       </div>
       
       {/* Copyright */}
